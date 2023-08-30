@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Footer from "@/components/footer/Footer";
 import UpperHeader from "@/components/navbar/UpperHeader";
+import Hero from "@/components/Hero/Hero";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,19 +21,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <div className="w-full flex flex-col z-[100] items-center   relative  ">
-          <div className="bg-black fixed w-full p-[10px] px-[25px]  xl:py-[10px] xl:px-0  ">
-            <UpperHeader />
+        <div className="w-ull">
+          <div className=" flex   flex-col z-[100] items-center   relative">
 
-          </div>
-          
-          <div className="mt-[40px] bg-white md:mt-[44px] fixed w-full px-[25px] xl:p-0 max-w-[1400px] m-auto">
             <Navbar />
           </div>
-        </div>
-        <div className="max-w-[1400px] relative w-full px-[25px] xl:p-0 m-auto">
-          {children}
-          <Footer />
+          <div className="relative w-full  xl:p-0 m-auto">
+            {children}
+            <Footer />
+          </div>
         </div>
       </body>
     </html>

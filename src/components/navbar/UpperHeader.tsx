@@ -6,7 +6,7 @@ import IconLink from "./IconLink";
 const UpperHeader=()=>{
 
     return(
-        <div className=" justify-center h-auto gap-[25px] sm:justify-between items-center flex max-w-[1400px] m-auto  text-white">
+        <div className=" justify-center h-auto gap-[25px] sm:justify-between items-center flex max-w-[1100px] m-auto  text-white">
          <span className="text-[14px] text-center">Free worldwide shipping until further notice.</span>
        <div className="hidden sm:flex  items-center  gap-5">
 
