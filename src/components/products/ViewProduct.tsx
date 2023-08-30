@@ -5,9 +5,7 @@ import { Grid, Paper, Button, Typography } from "@mui/material";
 import Image from "next/image";
 import { AiOutlinePlus, AiOutlineHeart } from "react-icons/ai";
 import { BiMinus } from "react-icons/bi";
-{
-  /* @ts-ignore */
-}
+{/* @ts-ignore */}
 import ReactStars from "react-rating-stars-component";
 import { RxReload } from "react-icons/rx";
 import { HiOutlineCash } from "react-icons/hi";
