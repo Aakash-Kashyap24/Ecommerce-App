@@ -3,7 +3,7 @@ import { Box, Button, Link, Typography } from "@mui/material";
 import Image from "next/image";
 
 interface PosterProps {
-  image: string;
+  image: any;
   link: string;
   title: string;
   description: string;
