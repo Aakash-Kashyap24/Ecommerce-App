@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import { ShoppingCart, Save, FavoriteBorder } from "@mui/icons-material";
 import Image from "next/image";
+{/* @ts-ignore */}
 import ReactStars from "react-rating-stars-component";
 
 interface ProductCardProps {
