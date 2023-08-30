@@ -12,6 +12,7 @@ import {
   ListItemText,
   IconButton,
 } from "@mui/material";
+import { Close } from "@mui/icons-material";
 const NavCart: React.FC = () => {
   const [cartOpen, setCartOpen] = useState(false);
 
@@ -41,6 +42,9 @@ const NavCart: React.FC = () => {
         open={cartOpen}
         onClose={handleCartClick}
       >
+          <IconButton className="absolute top-[25px] right-[25px]" color="inherit" onClick={handleCartClick}>
+        <Close  />
+      </IconButton>
         <br />
         <div className="flex flex-col m-auto items-center justify-center">
           <Typography className="text-2xl">Your Card Is Empty</Typography>
