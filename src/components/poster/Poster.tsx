@@ -19,12 +19,15 @@ const Poster: React.FC<PosterProps> = ({
   backgroundColor,
   textColor,
 }) => {
+  const bgClass = `bg-${backgroundColor}`;
+  const textClass = `text-${textColor}`;
+
   return (
-    <div className={`flex w-full p-[25px] items-center justify-between bg-${backgroundColor||"blue-50"}`}>
+    <div className={`flex rounded-sm w-full p-[25px] items-center justify-between ${bgClass}`}>
       <div className="content flex gap-3 flex-col w-full">
-        <span className={`text-[15px] text-${textColor}`}>{description}</span>
-        <span className={`text-[45px] font-bold text-${textColor}`}>{title}</span>
-        <Link href={link} className={`text-${textColor}`}>
+        <span className={`text-[15px] ${textClass}`}>{description}</span>
+        <span className={`text-[45px] font-bold ${textClass}`}>{title}</span>
+        <Link href={link} className={`${textClass}`}>
           View Collection
         </Link>
       </div>

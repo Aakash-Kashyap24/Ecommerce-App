@@ -6,6 +6,7 @@ import poster from "../../public/png/phone.png";
 import headphones from "../../public/png/headphones-removebg-preview.png";
 import tv from "../../public/png/Tv2-removebg-preview.png";
 import TopCategories from "@/components/topCategories/TopCategories";
+import AllProducts from "@/components/products/AllProducts";
 
 export default function Home() {
   return (
@@ -18,13 +19,13 @@ export default function Home() {
         <br />
         <br />
 
-        <div className="max-w-[1100px] gap-[25px] md:flex  items-center mx-auto">
+        <div className="  max-w-[1100px] gap-[25px] md:flex  items-center mx-auto">
           <Poster
             title="Phone"
             image={poster}
             link="https://example.com"
             description="Gaming Processor"
-            backgroundColor="green-100"
+            backgroundColor="green-400"
             textColor="#333"
           />
           <Poster
@@ -50,7 +51,9 @@ export default function Home() {
 
         <div className="max-w-[1100px] m-auto items-center flex flex-col gap-[15px]">
           <div className="flex flex-col items-center px-[25px]">
-            <span className="text-[25px] font-bold text-center">Top Categories</span>
+            <span className="text-[25px] font-bold text-center">
+              Top Categories
+            </span>
             <br />
             <span className="text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -70,6 +73,19 @@ export default function Home() {
             <TopCategories image={headphones} name="Headphones" />
           </div>
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div className="max-w-[1100px] m-auto flex flex-col items-center">
+        <span className="text-center text-[25px] font-bold ">Exclusive Products</span>
+       <br />
+       
+        <AllProducts />
+        </div>
+        <br />
+        <br />
 
         <div className="max-w-[1100px] m-auto">
           <HeroComponent
