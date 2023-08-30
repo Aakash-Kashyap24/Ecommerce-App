@@ -58,8 +58,8 @@ const NavbarLast=()=>{
   return(
     <div className="flex items-center gap-3">
 <Search/>
-<Menu/>
 <NavCart/>
+<Menu/>
       </div>
   )
 }

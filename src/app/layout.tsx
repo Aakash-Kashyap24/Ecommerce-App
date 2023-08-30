@@ -26,7 +26,7 @@ export default function RootLayout({
 
           </div>
           
-          <div className="mt-[40px] bg-white md-[44px] fixed w-full px-[25px] xl:p-0 max-w-[1400px] m-auto">
+          <div className="mt-[40px] bg-white md:mt-[44px] fixed w-full px-[25px] xl:p-0 max-w-[1400px] m-auto">
             <Navbar />
           </div>
         </div>

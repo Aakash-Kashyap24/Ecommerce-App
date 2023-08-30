@@ -2,7 +2,8 @@
 
 import React, { useState } from "react";
 import { Box, IconButton, InputAdornment, TextField } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
+import {FiSearch} from  'react-icons/fi'
+
 import { Close } from "@mui/icons-material";
 
 const Search = () => {
@@ -14,8 +15,8 @@ const Search = () => {
 
   return (
     <>
-      <IconButton onClick={handleSearchToggle}>
-        <SearchIcon />
+      <IconButton className="text-black" onClick={handleSearchToggle}>
+        <FiSearch />
       </IconButton>
       {isSearchOpen && (
         <Box
@@ -40,7 +41,7 @@ const Search = () => {
               endAdornment: (
                 <InputAdornment position="end">
                   <IconButton onClick={handleSearchToggle}>
-                    <SearchIcon />
+                    <FiSearch />
                   </IconButton>
                 </InputAdornment>
               ),

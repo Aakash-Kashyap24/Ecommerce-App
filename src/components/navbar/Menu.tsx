@@ -9,7 +9,7 @@ import {
   ListItemText,
   IconButton,
 } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import {HiMenuAlt3} from "react-icons/hi";
 import CloseIcon from "@mui/icons-material/Close";
 import NewsLetter from "../newLetter/NewsLetter";
 import { Close } from "@mui/icons-material";
@@ -26,8 +26,8 @@ const Menu = () => {
     <div 
     className=""
     >
-      <IconButton onClick={toggleDrawer}>
-        <MenuIcon />
+      <IconButton className="text-black" onClick={toggleDrawer}>
+        <HiMenuAlt3 />
       </IconButton>
       <Drawer
         anchor="right"

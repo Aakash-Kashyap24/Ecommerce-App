@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { Typography, Button } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined"; // Import the outlined icon
+import {FiSearch} from  'react-icons/fi'
 import {
   Drawer,
   List,
@@ -20,7 +22,7 @@ const NavCart: React.FC = () => {
   return (
     <div className="flex relative w-full items-center justify-center">
       <IconButton color="inherit" onClick={handleCartClick}>
-        <ShoppingCartIcon />
+        <ShoppingCartOutlinedIcon />
       </IconButton>
       <Drawer
         anchor="right"
