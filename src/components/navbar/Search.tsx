@@ -19,11 +19,13 @@ const Search = () => {
       </IconButton>
       {isSearchOpen && (
         <Box
-          className="fixed inset-0 shadow-lg w-screen h-[150px] flex-col bg-white flex items-center justify-center z-20"
+          className="fixed px-[25px] inset-0 shadow-m border w-screen h-[200px] flex-col bg-white flex items-center justify-center z-20"
         >
           <br />
+          <br />
+
           <div className="flex w-full max-w-[1400px]  justify-between items-center">
-            <span className="text-gray-500">WHAT ARE YOU LOOKING FOR?</span>
+            <span className="text-gray-600 font-semibold text-[14px]">WHAT ARE YOU LOOKING FOR?</span>
             <InputAdornment position="end">
                   <IconButton onClick={handleSearchToggle}>
                     <Close />
@@ -44,6 +46,8 @@ const Search = () => {
               ),
             }}
           />
+          <br />
+
         </Box>
       )}
     </>

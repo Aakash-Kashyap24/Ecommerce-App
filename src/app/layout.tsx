@@ -20,11 +20,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="w-full p-[25px] md:p-0 bg-black">
-          <UpperHeader />
+      <div className="w-full flex flex-col z-[100] items-center   relative  ">
+          <div className="bg-black fixed w-full p-[10px] px-[25px]  xl:py-[10px] xl:px-0  ">
+            <UpperHeader />
+
+          </div>
+          
+          <div className="mt-[40px] bg-white md-[44px] fixed w-full px-[25px] xl:p-0 max-w-[1400px] m-auto">
+            <Navbar />
+          </div>
         </div>
-        <div className="max-w-[1400px] w-full px-[25px] md:p-0 m-auto">
-          <Navbar />
+        <div className="max-w-[1400px] relative w-full px-[25px] xl:p-0 m-auto">
           {children}
           <Footer />
         </div>

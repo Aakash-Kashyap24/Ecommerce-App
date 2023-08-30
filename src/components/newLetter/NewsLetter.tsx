@@ -8,16 +8,18 @@ import Image from 'next/image';
 import logo from '../../../public/logo_medium.png'
 const NewsLetter = () => {
   return (
-    <div className='flex flex-col gap-3'>
+    <div className='flex flex-col gap-2'>
+        <br className="hidden md:block" />
+
         <div className="flex w-[75px] mx-auto">
             <Image src={logo} alt="" />
         </div>
         <br />
-<span className='text-center'>
+<span className='text-center text-[14px] md:text-[16px]'>
 Time to shop! Find your favorite product, check the latest collection & don’t miss out the best siscounts with Letta!
 </span>
 <br />
-<br />
+<br className='hidden md:block' />
         <span className='text-[15px] font-bold'>NEWSLETTER</span>
       <TextField
         variant="outlined"

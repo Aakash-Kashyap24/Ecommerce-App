@@ -6,8 +6,8 @@ import IconLink from "./IconLink";
 const UpperHeader=()=>{
 
     return(
-        <div className="py-2 justify-center md:justify-between items-center flex max-w-[1400px] m-auto  text-white">
-         <span className="text-[14px]">Free worldwide shipping until further notice.</span>
+        <div className=" justify-center h-auto gap-[25px] sm:justify-between items-center flex max-w-[1400px] m-auto  text-white">
+         <span className="text-[14px] text-center">Free worldwide shipping until further notice.</span>
        <div className="hidden sm:flex  items-center  gap-5">
 
          <div className="flex items-center gap-3 text-white">

@@ -1,68 +1,50 @@
-'use client'
-import React, { useEffect, useState } from 'react';
-import { IconButton, Popover, Typography, Button } from '@mui/material';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+"use client";
 
+import React, { useState } from "react";
+import { Typography, Button } from "@mui/material";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import {
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+  IconButton,
+} from "@mui/material";
 const NavCart: React.FC = () => {
-  const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
+  const [cartOpen, setCartOpen] = useState(false);
 
-  const handleMouseEnter = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setAnchorEl(event.currentTarget);
+  const handleCartClick = () => {
+    setCartOpen(!cartOpen);
   };
-
-  const handleMouseLeave = () => {
-    setAnchorEl(null);
-  };
-  const open = true;
-
-
-  const id = open ? 'navcart-popover' : undefined;
 
   return (
-    <div
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      style={{ display: 'inline-block' }}
-    >
-      <IconButton
-        color="inherit"
-      >
+    <div className="flex relative w-full items-center justify-center">
+      <IconButton color="inherit" onClick={handleCartClick}>
         <ShoppingCartIcon />
       </IconButton>
-      <Popover
-        id={id}
-        open={open}
-        anchorEl={anchorEl}
-        onClose={handleMouseLeave}
-        anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'right',
-        }}
-        transformOrigin={{
-          vertical: 'top',
-          horizontal: 'right',
-        }}
+      <Drawer
+        anchor="right"
         sx={{
-          width: 'auto', // or set a specific width
-          '& .MuiPaper-root': {
-            minWidth: '250px', // Set a minimum width for the popover content
+          "& .MuiDrawer-paper": {
+            width: "100%", // Use full width
+            maxWidth: "500px", // Set maximum width if needed
+            // Responsive minimum width
+            minWidth: {
+              xs: "250px", // On small mobile screens
+              lg: "400px", // On larger screens
+            },
           },
         }}
+        className="w-full  relative lg:px-[75px]"
+        open={cartOpen}
+        onClose={handleCartClick}
       >
-        <div style={{ padding: '16px' }}>
-          <Typography variant="h6" gutterBottom>
-            Your Cart
-          </Typography>
-          {/* Add your cart items or empty cart message here */}
-          {/* You can use your own components to display cart content */}
-          {/* For example: */}
-          {/* <CartItems /> */}
-          {/* <EmptyCartMessage /> */}
-          <Button variant="contained" color="primary" onClick={handleMouseLeave}>
-            Close
-          </Button>
+        <br />
+        <div className="flex flex-col m-auto items-center justify-center">
+          <Typography className="text-2xl">Your Card Is Empty</Typography>
+          <ShoppingCartIcon />
         </div>
-      </Popover>
+      </Drawer>
     </div>
   );
 };
