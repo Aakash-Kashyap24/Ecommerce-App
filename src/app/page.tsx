@@ -7,6 +7,9 @@ import headphones from "../../public/png/headphones-removebg-preview.png";
 import tv from "../../public/png/Tv2-removebg-preview.png";
 import TopCategories from "@/components/topCategories/TopCategories";
 import AllProducts from "@/components/products/AllProducts";
+import NewsLetter from "@/components/newLetter/NewsLetter";
+import mobilePhone from "../../public/png/phone.png";
+
 
 export default function Home() {
   return (
@@ -79,23 +82,32 @@ export default function Home() {
         <br />
 
         <div className="max-w-[1100px] m-auto flex flex-col items-center">
-        <span className="text-center text-[25px] font-bold ">Exclusive Products</span>
-       <br />
-       
-        <AllProducts />
+          <span className="text-center text-[25px] font-bold ">
+            Exclusive Products
+          </span>
+          <br />
+
+          <AllProducts />
         </div>
         <br />
         <br />
+        <div className="max-w-[1100px] p-[25px] m-auto bg-blue-50 flex items-center justify-center py-[50px]">
+          <NewsLetter />
 
+        </div>
         <div className="max-w-[1100px] m-auto">
           <HeroComponent
-            title="Featured Product"
-            description="Watch your favorite shows on our high-quality TV!"
+          imageSrc={mobilePhone}
+            title="Electronics Product"
+            description="Get All Electronics Product Here!"
             isButton={false}
             switchPosition
             buttonName="Shop Now"
           />
         </div>
+        <br />
+        <br />
+
       </div>
     </>
   );

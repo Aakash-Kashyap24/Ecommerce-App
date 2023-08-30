@@ -1,10 +1,9 @@
 import React from "react";
 import { Button, Typography } from "@mui/material";
 import Image from "next/image";
-import heroImage from "../../../public/png/Tv2-removebg-preview.png";
 
 interface HeroProps {
-  imageSrc?: string;
+  imageSrc?: any;
   title: string;
   description: string;
   isButton: boolean;
@@ -27,8 +26,9 @@ const HeroComponent: React.FC<HeroProps> = ({
           <div className="md:w-1/2 flex justify-center overflow-hidden">
             <div className="w-full h-full relative">
               <Image
-                src={heroImage}
+                src={imageSrc}
                 alt={title}
+                height={400}
                 // layout="fill"
                 objectFit="cover"
               />
@@ -86,7 +86,7 @@ const HeroComponent: React.FC<HeroProps> = ({
           <div className="md:w-1/2 flex justify-center overflow-hidden">
             <div className="w-full h-full relative">
               <Image
-                src={heroImage}
+                src={imageSrc}
                 alt={title}
                 // layout="fill"
                 objectFit="cover"
