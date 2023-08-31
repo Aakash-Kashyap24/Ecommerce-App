@@ -1,9 +1,7 @@
 import React from "react";
 import image from "../../../public/logo_medium.png";
 import Image from "next/image";
-{
-  /* @ts-ignore */
-}
+{/* @ts-ignore */}
 import ReactStars from "react-rating-stars-component";
 
 const ReviewCard = () => {
