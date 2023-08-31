@@ -73,7 +73,7 @@ const Menu = () => {
           {/* Add more menu items as needed */}
         </List>
         <div className="hidde px-4">
-          <NewsLetter />
+          <NewsLetter variant="primary"/>
         </div>
       </Drawer>
     </div>

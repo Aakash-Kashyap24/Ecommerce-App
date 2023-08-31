@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col gap-[100px] items-center">
-        <div className="bg-blue-50">
+        <div className="w-full bg-blue-50">
           <Hero />
         </div>
       
@@ -86,22 +86,11 @@ export default function Home() {
           <AllProducts />
         </div>
        
-        <div className="max-w-[1100px] p-[25px] m-auto bg-blue-50 flex items-center justify-center py-[50px]">
-          <NewsLetter />
+        <div className="w-full bg-red-500 p-[25px] m-auto  flex items-center justify-center py-[50px]">
+          <NewsLetter variant="secondary"/>
 
         </div>
-        <div className="max-w-[1100px] m-auto">
-          <HeroComponent
-          imageSrc={mobilePhone}
-            title="Electronics Product"
-            description="Get All Electronics Product Here!"
-            isButton={false}
-            switchPosition
-            buttonName="Shop Now"
-          />
-        </div>
-        <br />
-        <br />
+     
 
       </div>
     </>
