@@ -136,7 +136,7 @@ const ViewProduct: React.FC<ViewProductProps> = ({
           <span className=" text-red-500">Out Of Stock</span>
         )}
         <hr />
-        <div className="button flex items-center gap-[20px]">
+        <div className="button flex flex-wrap items-center gap-[20px]">
           <span className="flex cursor-pointer p-[10px] w-fit rounded-full bg-blue-50">
             <BiMinus />
           </span>
