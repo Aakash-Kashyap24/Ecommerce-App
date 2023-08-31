@@ -4,6 +4,7 @@ import React from 'react'
 import ViewProduct from "@/components/products/ViewProduct";
 import img from "../../../public/png/phone.png";
 import AutoBreadcrumbs from "@/app/BreadCrumb";
+import DescReview from '@/components/reviews/DescReview';
 
 const page = () => {
 
@@ -20,6 +21,11 @@ const page = () => {
         rating={4}
         numberOfReviews={50}
       />
+      <br />
+      <br />
+
+
+      <DescReview/>
     </div>
   );
 };
