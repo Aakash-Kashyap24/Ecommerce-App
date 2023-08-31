@@ -4,11 +4,17 @@ import ReviewForm from './ReviewsForm'
 
 const Reviews = () => {
   return (
-    <div>
+    <div className='flex flex-col gap-[30px]'>
       <ReviewForm/>
       <br />
-      <br />
       <ReviewCard/>
+      <ReviewCard/>
+      <ReviewCard/>
+      <ReviewCard/>
+      <ReviewCard/>
+      <ReviewCard/>
+      <ReviewCard/>
+
     </div>
   )
 }

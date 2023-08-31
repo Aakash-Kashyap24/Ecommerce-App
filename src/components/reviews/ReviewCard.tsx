@@ -14,13 +14,13 @@ const ReviewCard = () => {
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
   };
   return (
-    <div className="flex gap-3 w-full py-2">
+    <div className="flex  gap-3 w-full py-2">
         <br/>
       <div className="profile_img rounded-full overflow-hidden  flex items-start ">
         <Image src={image} alt="profile_img object-cover   rounded-full" width={75} height={75} />
       </div>
       <div className="content w-full flex flex-col gap-5">
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <span className="font-bold ">{data?.name}</span>
         <div className="flex gap-4 items-center">
         <ReactStars
