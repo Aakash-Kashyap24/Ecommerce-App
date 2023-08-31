@@ -18,3 +18,30 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
 }
+/* Default styling for larger screens */
+.grid-system {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+/* Media query for screens with a max-width of 900px */
+@media (max-width: 900px) {
+  .grid-system {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Media query for screens with a max-width of 700px */
+@media (max-width: 700px) {
+  .grid-system {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Media query for screens with a max-width of 500px */
+@media (max-width: 450px) {
+  .grid-system {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

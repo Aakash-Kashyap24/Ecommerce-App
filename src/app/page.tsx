@@ -14,15 +14,13 @@ import mobilePhone from "../../public/png/phone.png";
 export default function Home() {
   return (
     <>
-      <div className="">
+      <div className="flex flex-col gap-[100px] items-center">
         <div className="bg-blue-50">
           <Hero />
         </div>
-        <br />
-        <br />
-        <br />
+      
 
-        <div className="  max-w-[1100px] gap-[25px] md:flex  items-center mx-auto">
+        <div className="flex flex-col w-full px-[25px]   md:flex-row max-w-[1100px]  gap-[25px]  items-center justify-center  mx-auto">
           <Poster
             title="Phone"
             image={poster}
@@ -31,6 +29,7 @@ export default function Home() {
             backgroundColor="green-400"
             textColor="#333"
           />
+        
           <Poster
             title="Tv"
             image={tv}
@@ -39,6 +38,7 @@ export default function Home() {
             backgroundColor="blue-50"
             textColor="#333"
           />
+        
           <Poster
             title="Music"
             image={headphones}
@@ -47,10 +47,9 @@ export default function Home() {
             backgroundColor="green-500"
             textColor="#333"
           />
+      
         </div>
-        <br />
-        <br />
-        <br />
+      
 
         <div className="max-w-[1100px] m-auto items-center flex flex-col gap-[15px]">
           <div className="flex flex-col items-center px-[25px]">
@@ -76,12 +75,9 @@ export default function Home() {
             <TopCategories image={headphones} name="Headphones" />
           </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
+      
 
-        <div className="max-w-[1100px] m-auto flex flex-col items-center">
+        <div className="w-full max-w-[1100px] mx-auto px-[25px] flex flex-col items-center">
           <span className="text-center text-[25px] font-bold ">
             Exclusive Products
           </span>
@@ -89,8 +85,7 @@ export default function Home() {
 
           <AllProducts />
         </div>
-        <br />
-        <br />
+       
         <div className="max-w-[1100px] p-[25px] m-auto bg-blue-50 flex items-center justify-center py-[50px]">
           <NewsLetter />
 

@@ -8,8 +8,7 @@ import phone2 from "../../../public/png/phonoe.jpg";
 
 const AllProducts = () => {
   return (
-    <div className="grid grid-cols-1  sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4">
-      
+    <div className="grid-system  w-full  ">
       <ProductCard
         imageSrc={tv}
         numberOfReviews={4}
@@ -42,7 +41,7 @@ const AllProducts = () => {
         name="Product 4"
         price={5999}
       />
-       <ProductCard
+      <ProductCard
         imageSrc={tv}
         numberOfReviews={4}
         rating={5}
@@ -50,7 +49,7 @@ const AllProducts = () => {
         name="Product 4"
         price={5999}
       />
-       <ProductCard
+      <ProductCard
         imageSrc={tv}
         numberOfReviews={4}
         rating={5}
@@ -58,7 +57,7 @@ const AllProducts = () => {
         name="Product 4"
         price={5999}
       />
-       <ProductCard
+      <ProductCard
         imageSrc={tv}
         numberOfReviews={4}
         rating={5}
@@ -66,7 +65,7 @@ const AllProducts = () => {
         name="Product 4"
         price={5999}
       />
-       <ProductCard
+      <ProductCard
         imageSrc={tv}
         numberOfReviews={4}
         rating={5}
@@ -74,7 +73,7 @@ const AllProducts = () => {
         name="Product 4"
         price={5999}
       />
-       <ProductCard
+      <ProductCard
         imageSrc={tv}
         numberOfReviews={4}
         rating={5}

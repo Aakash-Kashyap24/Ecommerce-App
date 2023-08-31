@@ -9,6 +9,7 @@ interface PosterProps {
   description: string;
   backgroundColor: string;
   textColor: string;
+  
 }
 
 const Poster: React.FC<PosterProps> = ({
@@ -23,11 +24,11 @@ const Poster: React.FC<PosterProps> = ({
   const textClass = `text-${textColor}`;
 
   return (
-    <div className={`flex rounded-sm w-full p-[25px] items-center justify-between ${bgClass}`}>
-      <div className="content flex gap-3 flex-col w-full">
+    <div className={`flex rounded-sm w-full p-[10px] items-center justify-between  bg-green-100 ${bgClass}`}>
+      <div className="content flex gap-1 flex-col w-full">
         <span className={`text-[15px] ${textClass}`}>{description}</span>
-        <span className={`text-[45px] font-bold ${textClass}`}>{title}</span>
-        <Link href={link} className={`${textClass}`}>
+        <span className={`text-[45px] md:text-29px font-bold ${textClass}`}>{title}</span>
+        <Link href={link} className={`text-red-500 no-underline`}>
           View Collection
         </Link>
       </div>
@@ -35,8 +36,11 @@ const Poster: React.FC<PosterProps> = ({
         <Image
           src={image}
           alt={title}
-          layout="responsive"
-          objectFit="cover"
+          height={400}
+        
+          layout=""
+          objectFit="contain"
+          className="h-[250px] md:h-[150px] object-contain w-full"
         />
       </div>
     </div>

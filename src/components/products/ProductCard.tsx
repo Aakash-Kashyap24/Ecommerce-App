@@ -31,7 +31,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   imageSrc,
 }) => {
   return (
-    <Card className="w-full h-[400px] py-6  shadow-md cursor-pointer rounded-md overflow-hidden">
+    <Card className="h-[380px] w-full mx-auto max-w-[380px]  py-6  shadow-md cursor-pointer rounded-md overflow-hidden">
       <Image src={imageSrc} alt={name} className="w-full   h-[50%] object-contain" />
       <CardContent>
         <Typography variant="h5" className="font-bold" gutterBottom>
