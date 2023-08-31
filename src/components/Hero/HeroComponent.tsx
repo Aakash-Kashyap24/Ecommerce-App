@@ -20,7 +20,7 @@ const HeroComponent: React.FC<HeroProps> = ({
   buttonName,
 }) => {
   return (
-    <div className="w-full py-10 md:py-20 flex flex-col md:flex-row items-center justify-between">
+    <div className="w-full py-10 md:py-20 flex flex-col md:flex-row items-center justify-between ">
       {switchPosition ? (
         <>
           <div className="md:w-1/2 flex justify-center overflow-hidden">

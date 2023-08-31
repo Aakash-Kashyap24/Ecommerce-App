@@ -36,7 +36,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="flex flex-col py-[20px] px-[25px] md:px-0 min-h-[50vh] items-center justify-center m-auto max-w-[1100px]">
+    <div className="flex flex-col py-[20px] px-[25px] md:px-0 min-h-[50vh] items-center justify-center m-auto max-w-[1100px] ">
       <HeroComponent
       imageSrc={heroImage}
         title="Featured Product"

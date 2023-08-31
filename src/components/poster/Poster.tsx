@@ -24,7 +24,7 @@ const Poster: React.FC<PosterProps> = ({
   const textClass = `text-${textColor}`;
 
   return (
-    <div className={`flex rounded-sm w-full p-[10px] items-center justify-between  bg-green-100 ${bgClass}`}>
+    <div className={`flex rounded-sm w-full p-[10px] items-center justify-between  bg-white bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg ${bgClass}`}>
       <div className="content flex gap-1 flex-col w-full">
         <span className={`text-[15px] ${textClass}`}>{description}</span>
         <span className={`text-[45px] md:text-29px font-bold ${textClass}`}>{title}</span>

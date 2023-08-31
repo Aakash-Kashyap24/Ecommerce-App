@@ -9,14 +9,19 @@ import TopCategories from "@/components/topCategories/TopCategories";
 import AllProducts from "@/components/products/AllProducts";
 import NewsLetter from "@/components/newLetter/NewsLetter";
 import mobilePhone from "../../public/png/phone.png";
+import Shape from "@/components/shapes/Shape";
 
 
 export default function Home() {
   return (
     <>
       <div className="flex flex-col gap-[100px] items-center">
-        <div className="w-full bg-blue-50">
+        <div className="relative w-full bg-white bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg">
           <Hero />
+          <div className="absolute top-6 opacity-25">
+
+          <Shape/>
+          </div>
         </div>
       
 
